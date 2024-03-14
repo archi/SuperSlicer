@@ -23,7 +23,7 @@ prusaslicer_add_cmake_project(wxWidgets
         -DwxUSE_MEDIACTRL=OFF
         -DwxUSE_DETECT_SM=OFF
         -DwxUSE_UNICODE=ON
-        -DwxUSE_OPENGL=ON
+        -DwxUSE_OPENGL=OFF
         -DwxUSE_LIBPNG=sys
         -DwxUSE_ZLIB=sys
         -DwxUSE_REGEX=builtin
@@ -31,8 +31,10 @@ prusaslicer_add_cmake_project(wxWidgets
         -DwxUSE_LIBJPEG=sys
         -DwxUSE_LIBTIFF=sys
         -DwxUSE_EXPAT=sys
-        -DwxUSE_LIBSDL=OFF
+        -DwxUSE_LIBSDL=ON
         -DwxUSE_XTEST=OFF
+        -DwxUSE_DISPLAY=OFF
+        -DwxUSE_WEBVIEW=OFF
 )
 
 if (MSVC)
